@@ -12,7 +12,7 @@ class CreatePosts < ActiveRecord::Migration[6.1]
     end
 
     #For Deployment
-    add_foreign_key :posts, :users, column: :author_id
+    add_foreign_key :posts, column: :user_id
 
   end
 end
